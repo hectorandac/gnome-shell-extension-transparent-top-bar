@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema id="org.gnome.shell.extensions.transparent-top-bar-tweaks" path="/org/gnome/shell/extensions/transparent-top-bar-tweaks/">
+        <key type="i" name="opacity">
+            <default>35</default>
+            <summary>Top bar opacity</summary>
+            <description>
+                Opacity percentage applied while the transparent top bar style is active.
+                0 is fully transparent and 100 is fully opaque.
+            </description>
+        </key>
+        <key type="b" name="keep-transparent-with-windows">
+            <default>false</default>
+            <summary>Keep transparent with maximized windows</summary>
+            <description>
+                When enabled, the top bar stays transparent even when a window touches
+                or is maximized against the top bar.
+            </description>
+        </key>
+        <key type="i" name="content-shadow-strength">
+            <default>60</default>
+            <summary>Top bar content shadow strength</summary>
+            <description>
+                Strength of the text and icon shadow applied to top bar items.
+                0 disables it and 100 makes it strongest.
+            </description>
+        </key>
+        <key type="i" name="panel-shadow-strength">
+            <default>0</default>
+            <summary>Top bar panel shadow strength</summary>
+            <description>
+                Strength of the box shadow applied to the panel background.
+                0 disables it and 100 makes it strongest.
+            </description>
+        </key>
+        <key type="s" name="content-color-scheme">
+            <default>'light'</default>
+            <summary>Top bar content color scheme</summary>
+            <description>
+                Controls whether text and symbolic icons in the top bar use a light
+                or dark color treatment. Full-color application icons are not changed.
+            </description>
+        </key>
+        <key type="b" name="force-white-in-overview">
+            <default>false</default>
+            <summary>Force white content in overview</summary>
+            <description>
+                When enabled, top bar text and symbolic icons switch to white while
+                the GNOME Shell overview is open.
+            </description>
+        </key>
+        <key type="s" name="font">
+            <default>''</default>
+            <summary>Top bar font override</summary>
+            <description>
+                Optional Pango font description used for the GNOME Shell top bar.
+                When empty, the shell theme default font is used.
+            </description>
+        </key>
+    </schema>
+</schemalist>
